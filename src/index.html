@@ -1,11 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <title>Weather</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>Weather API</h1>
+    <p>To get the current weather conditions for a location, please enter the city name or the city and state separated by a comma, or a valid zip code. Here are three examples:</p>
+    <!-- <pre>
+      Portland
+      Atlanta, Georgia
+      cairo
+    </pre> -->
+  <!-- </div> -->
+  <!-- <div class="form-container" -->
+    <form class="form-container">
+      <br />
+      <span class="solid"><label for="location" class="label-text"></label>
+      <input class="form-control" id="location" type="text" name="location" value="San Francisco, California" required>
+      <br />
+      <button type="submit" class="btn btn-success" id="weatherLocation">Search</button></span>
+    </form>
+    <br />
+    <br />
+    <p id="showResponse">  <img src="" id="icon"></p>
+  </div>
+<footer></footer>
 </body>
 </html>

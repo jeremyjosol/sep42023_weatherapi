@@ -3,6 +3,8 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
+
 
 module.exports = {
   entry: './src/index.js',
@@ -10,7 +12,7 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
-  devServer: {
+    devServer: {
       contentBase: "./dist",
     },
   devtool: 'eval-source-map',
@@ -21,10 +23,11 @@ module.exports = {
       verbose: true
     }),
     new HtmlWebpackPlugin({
-      title: 'new_project_title_here',
+      title: 'weatherapi',
       template: './src/index.html',
       inject: 'body'
-    })
+    }),
+    new Dotenv()
   ],
   module: {
     rules: [
@@ -34,23 +37,7 @@ module.exports = {
           'style-loader',
           'css-loader'
         ]
-      },
-
-      {
-        test: /\.(gif|png|avif|jpe?g)$/,
-        type: "asset/resource",
-        generator: {
-          filename: "[name][ext]",
-          publicPath: "assets/images/",
-          outputPath: "assets/images/",
-        },
-      },
-      {
-        test:/\.html$/,
-        use: [
-          'html-loader'
-        ]
-      },
+      }
     ]
   }
 };
