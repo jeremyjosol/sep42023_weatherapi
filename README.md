@@ -34,11 +34,11 @@ This an application that uses the [OpenWeather API](https://openweathermap.org/a
 
 4. If you don't already have an API key for [OpenWeather](https://openweathermap.org/api), create a free account to have one generated. This is required in order for the function to call on the API in this project.
 
-5. After opening up your codespace, locate the .env file. Within the .env file, enter the following code: 
+5. After opening up your codespace, locate the **.env** file. Within the **.env** file, enter the following code: 
       ```
         API_KEY=yourAPIkey
       ```  
-    > _.env will already be located in the .gitignore file to protect this sensitive information._
+    > **_.env** will already be located in the **.gitignore** file to protect this sensitive information._
 
 6. Before you can use or deploy the project, make sure to install its dependencies. Run the following command in your terminal:
 
