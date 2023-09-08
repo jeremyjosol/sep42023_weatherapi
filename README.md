@@ -4,7 +4,7 @@
 _Jeremy Josol_
 
 ## About
-This an application that features a search engine and uses the [OpenWeather API](https://openweathermap.org/api) to allow a user search input based on city, state, or zip code and generates real time weather results based on the input and outputs specific API parameters on the webpage. The documentation referenced is based on current weather data calls.
+This application integrates a search engine and utilizes the [OpenWeather API](https://openweathermap.org/api) to facilitate user searches by city, state, or zip code. It promptly delivers real-time weather data, displaying specific API parameters on the webpage. The referenced documentation is 'current weather' data calls.
 
 ## Technologies Used
 
