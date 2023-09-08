@@ -4,7 +4,7 @@
 _Jeremy Josol_
 
 ## About
-This an application that uses the [OpenWeather API](https://openweathermap.org/api) and allows a user to search for a city, state, or zip code to generate weather results based on the input.  
+This an application that features a search engine and uses the [OpenWeather API](https://openweathermap.org/api) to allow a user search input based on city, state, or zip code and generates real time weather results based on the input and outputs specific API parameters on the webpage. The documentation referenced is based on current weather data calls.
 
 ## Technologies Used
 
@@ -38,7 +38,7 @@ This an application that uses the [OpenWeather API](https://openweathermap.org/a
       ```
         API_KEY=yourAPIkey
       ```  
-    > **_.env** will already be located in the **.gitignore** file to protect this sensitive information._
+    > _.**env** will already be located in the **.gitignore** file to protect this sensitive information._
 
 6. Before you can use or deploy the project, make sure to install its dependencies. Run the following command in your terminal:
 
