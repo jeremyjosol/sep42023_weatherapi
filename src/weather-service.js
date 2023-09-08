@@ -3,9 +3,9 @@ export default class WeatherService {
     let url;
 
     if (!isNaN(location)) {
-      url = `http://api.openweathermap.org/data/2.5/weather?zip=${location}&appid=${process.env.API_KEY}`;
+      url = `https://api.openweathermap.org/data/2.5/weather?zip=${location}&appid=12458acc5b0240da799db18d4f1bb10b`;
     } else {
-      url = `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${process.env.API_KEY}`;
+      url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=12458acc5b0240da799db18d4f1bb10b`;
     }
     return fetch(url)
       .then(function(response) {
